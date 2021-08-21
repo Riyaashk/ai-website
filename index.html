@@ -21,7 +21,7 @@
        header{
            height:50px;
            width: :100%;
-           background-color:gray;
+           background-color:black;
            animation: header 1s ease-in-out;
     }
     @keyframes header{
@@ -54,11 +54,13 @@
            opacity: 50%;
        }
        .bgimg{
+        opacity:100%;
          background-image: url(https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
-           opacity: 50%;
-           height: 500px;
+          
+           height: 400px;
            width:100%;
            animation:bgimg 2s  ease-in-out;
+          
        
     }
     @keyframes bgimg{
@@ -67,10 +69,110 @@
             transform: translatex(-100%);
         }
     }
+       .content{
+           text-align:center;
+            opacity: 100px;
+       
+       }
+       
+        .content button{
+        padding: 15px 30px;
+        background-color:grey;
+        font-size: 18px;
+        border-radius: 10px;
+        margin-left:0%;
+        margin-top:2%;
+        font-weight:600;
+        cursor: pointer;
+        opacity: 100px;
+        
+        
+           
+    }
+        button a{
+        
+    text-decoration:none;
+           color: white; 
+     opacity: 100px;
+    }   
+
+       .content h1{
+           color:green;
+           font-size: 50px;
+           font-weight: 600;
+       letter-spacing: 5px;
+           margin-top:100px;
+          
+       }
+    
+    button:hover{
+        background: red;
+    }
+       button i{
+           color: #E5B822;
+       }
+       .skills{
+           margin-top:0px;
+           background-color: pink;
+           height:250px;
+           width:100%;
+           text-align: center;
+       animation: skillscontent 2s  ease-in-out;
+        
+       
+    }
+  
+    
+    @keyframes skillscontent{
+        0%{
+            opacity: 0;
+            transform: translatex(100%);
+        }
+    }
+        .skillscontent p1,p2,p3{
+          font-size: 20px;
+           font-weight:600;
+           color:green;
+           
+       }
+       .skillscontent h1{
+           color:red;
+           font-size: 40px;
+           text-decoration:  underline;
+           text-decoration-color: black;
+       }
+       .skillscontent{
+           
+           animation: skillscontent 2s  ease-in-out;
+        
+       
+    }
+  
+    
+    @keyframes skillscontent{
+        0%{
+            opacity: 0;
+            transform: translatex(100%);
+        }
+    }
+       
+      
+       .fa-html5{
+           color:blue;
+    
+       }
+       .fa-css3{
+           color:blue;
+         
+       }
+       .fa-python{
+           color:orange;
+           
+       }
     </style>
     
     
-    <body>
+<body>
  <div>    
         <header>
             
@@ -82,12 +184,32 @@
 </ul>
        </header>
      </div> 
+  
+<div class="bgimg">
      
-        <div class="bgimg">
          
-
-        
+            
+        <div class="content">
+            <br>
+            <h1>Riyaash.k</h1>
+            <button><a href="#"><i class="fa fa-certificate"></i> Certificates</a></button>       
+            <button><a href="#"> <i class="fa fa-file"></i> Resume</a></button> 
+              
         </div>
+         </div>
+
+    <div class="skills">
+        <div class="skillscontent">
+            <br><br>
+        <h1>Skills</h1>
+        <br>
+    <p1> <i class="fab fa-html5"></i> HTML</p1><br><br>
+    <p2><i class="fab fa-css3"></i> CSS</p2><br><br>
+    <p3> <i class="fab fa-python"></i> PYTHON</p3>
+    
+     </div>
+        </div>
+
        
     </body>
 </html>
