@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Riyaash</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+<title>riyaash web</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    
-<style>
-    *{
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+   <style>
+       *{
         
         margin: 0;
         padding:0;
         box-sizing: border-box;
         cursor: pointer;
         font-family: sans-serif;
-    }
-    
-    body{
-        width: 100%;
-        min-height: 100vh;
-        background-color:black;
-   
-    }
-    
-    header{
+       }
+       body{
+           background-color:white;
+       }
+       
+        header{
+            height:70px;
+            width: 100%;
         display:flex;
-        justify-content:space-between;
+       justify-content: space-between;
+  
+     background-color: grey;
         padding: 15px 20px;
         color:white;
         animation: header 1s ease-in-out;
@@ -38,272 +36,51 @@
             transform: translateY(-100%);
         }
     }
-    nav li{
        
-        display:inline-block;
-        margin:10px 20px;
-        font-weight: 600px;
-        font-size: 20px;
-        
-       
-    }
-    nav li a{
-        
-    text-decoration: none;
-        color: white;
-    }
-    nav li:hover{
-        background:green;
-        border-radius: 10px;
-    }
-    .main1{
-        width: 100%; 
-        height: 400px;
-        display: flex;
-        background-repeat: no-repeat;
-       
-         background-image: url("https://media.giphy.com/media/11j5OF7BTglVkc/giphy.gif")
-       
-        
+       nav li{
           
-    }
-    .content{
-        width: 50%;
-        margin-top: 8%;
-        margin-left: 25%;
-        color: white;
-        overflow: hidden;
-         animation: content 2s  ease-in-out;
-       
-    }
-    @keyframes content{
-        0%{
-            opacity: 0;
-            transform: translatex(-100%);
-        }
-    }
-    .content h1{
-        font-size: 50px;
-        margin-bottom: 1%;
-        letter-spacing: 8px;
-        margin-left: 0%;
-        margin-top: 10%;
-        color:goldenrod;
+           display: inline-flex;
+           padding-top: 10px;
+           padding-right: 20px;
+           padding-left: 20px;
+      }
+       nav li a{
+           text-decoration: none;
+           color: white;
+           font-size: 20px;
+           font-weight: 600;
+       }
+       nav li:hover{
+           color: white;
+           opacity: 50%;
+       }
+     
+           
+       img{
+           height:500px;
+           width:100%;
+           opacity: 50%;
+       }
+    </style>
+    
+    
+    <body>
+        <h2></h2>
+        <header>
+          <h2>Welcome</h2>  
+    <nav>
         
-    }
-    .content h3{
-        font-size: 25px;
-        margin-bottom: 3%;
-        font-family: cursive;
-       margin-left: 5%;
-        color: green;
-    }
-    button{
-        padding: 15px 30px;
-        background: transparent;
-        color: white;
-        font-size: 17px;
-        border-radius: 10px;
-       margin-left: 0%; 
-    }
-    
-     button a{
-        
-    text-decoration: none;
-        color: white;
-    }   
-
-    button:hover{
-        background: red;
-    }
-    .image{
-      
-        margin-top: 7%;
-        margin-right: 25%;
-          animation: image 2s  ease-in-out;
-        
-       
-    }
-  
-    
-    @keyframes image{
-        0%{
-            opacity: 0;
-            transform: translatex(100%);
-        }
-    }
-
-    img{
-        border-radius: 20%;
-        }
-    .main2{
-        width: 100%;       
-        display: flex;
-        background-color:white;
-        width: 100%;
-        height: auto;
- } 
-      .skills h1{
-      float: left;
-          margin-left: 70px;
-          color: red;
-    }
-
-    .skills p1{
-        float: left;
-          margin-left: 50px;
-        color: green;
-        font-size: 30px;
-        }
- .fa-html5{
-       color:skyblue; 
-    }
-.skills p2{
-    float: left;
-      margin-left: 50px;
-        color: green;
-        font-size: 30px;
-        }
-.fa-css3{
-       color:skyblue; 
-    }
-    .skills p3{
-       float: left;
-          margin-left: 50px;
-        color: green;
-        font-size: 30px;
-        }
-    .fa-python{
-      color: orange;
-    }
-.psna h1{
-       
-        margin-left: 200px;
-       color:green;
-      
-    }
-.psna p1{      
-        margin-left: 220px;
-        font-size: 30px;
-        color: violet;
-    }
-.psna h2{      
-        margin-left: 450px;
-        font-size: 30px;
-        color: red;
-    }
-    
-    .main3{
-        background-color: white;
-        width: 100%;
-        height: 100px;
-    }
-    .footer a{
-        text-decoration: none;
-    }
-    .footer{
-  display: inline-block;
-  font-size: 50px;
-    }
-    
-    .fa-instagram-square{
-        color: red;
-      margin-left: 650px;
-          margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .fa-facebook-square{
-        color:blue;
-      margin-left: 20px;
-       
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .fab:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-    </style>    
-    
-<body>
-    
-    <header>
-       <h1>Welcome</h1>
-         <nav>
-            <li><a href="#"><i class="fa fa-home"></i> Home</a></li> 
-            <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li> 
+        <li><a href="#"><i class="fa fa-home"> Home</i> </a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li> 
           
-          </nav>
-    </header>
-     
-    
-<div class="main1">
-    <div class="content">
-         <h1>Riyaash.k</h1>
-        <h3>
-      Front End Developer</h3>
-       
-        <button><a href="#"><i class="fa fa-certificate"></i> Certificates</a></button>
-        <button> <i class="fa fa-file"></i> Resume</button> 
-     </div>
-    
-<div class="image">
-        <img src="https://raw.githubusercontent.com/Riyaashk/mywebsite/main/resources/ms.jpg.jpg" alt="raw.githubusercontent.com" style="width:250px;height:250px;">
-    <br>
-    <br>
-     
-  </div>
-</div>
-
-<div class="main2">
-
-    <div class="skills">
-         <br> <br>
-  
-       
-          <h1>Skills</h1> <br> <br><br> <br>
+    </nav>  
+       </header>
         
-         <p1> <i class="fab fa-html5"></i> HTML</p1><br> <br><br> 
-         <p2><i class="fab fa-css3"></i> CSS</p2><br><br><br>
-         <p3> <i class="fab fa-python"></i> Python</p3> 
-        <br><br> <br>
-         </div>
-        <div class="psna">
-            <br><br>   <br><br>   
-            <h2>Currently Pursuing</h2><br><br>
-            <p1>B.Tech Artificial Intelligence and Data Sience(1st Year)</p1>         <h1><marquee scrollamount="10s">PSNA College Of Engineering and Technology,Dindigul</marquee></h1>
-         
-  
-    </div>
- </div>
-
-  
-       <div class="main3">
-          <div class="footer">
-              
-           <a href="#"><i class="fab fa-instagram-square"></i></a>
-              <a href="#"><i class="fab fa-facebook-square"></i> </a>
-            
-           </div>
+        <div class="main1">
+        <div class="image">
+            <img src="https://wallpapercave.com/wp/wp3077561.png">
             </div>
-    
-   
+        
+        </div>
     </body>
-    </html>
-
-
-
-
+</html>
