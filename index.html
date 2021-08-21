@@ -12,7 +12,6 @@
         margin: 0;
         padding:0;
         box-sizing: border-box;
-        cursor: pointer;
         font-family: sans-serif;
        }
        body{
@@ -22,8 +21,15 @@
        header{
            height:50px;
            width: :100%;
-           background-color: grey;
-       }
+           background-color:gray;
+           animation: header 1s ease-in-out;
+    }
+    @keyframes header{
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    }
        
        ul li{
            display:flex;
@@ -33,6 +39,7 @@
            padding-right: 20px;
            font-size: 15px;
            font-weight: 600;
+           cursor: pointer;
         
        }
        li a{
@@ -46,21 +53,41 @@
            color: white;
            opacity: 50%;
        }
-      
+       .bgimg{
+         background-image: url(https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+           opacity: 50%;
+           height: 500px;
+           width:100%;
+           animation:bgimg 2s  ease-in-out;
+       
+    }
+    @keyframes bgimg{
+        0%{
+            opacity: 0;
+            transform: translatex(-100%);
+        }
+    }
     </style>
     
     
     <body>
-      
+ <div>    
         <header>
             
 <ul>
-        
+         <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+    
         <li><a href="#"><i class="fa  fa-home"></i> Home</a></li>
-    <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+   
 </ul>
        </header>
+     </div> 
+     
+        <div class="bgimg">
+         
+
         
+        </div>
        
     </body>
 </html>
