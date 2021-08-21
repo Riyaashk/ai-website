@@ -19,68 +19,48 @@
            background-color:white;
        }
        
-        header{
-            height:70px;
-            width: 100%;
-        display:flex;
-       justify-content: space-between;
-  
-     background-color: grey;
-        padding: 15px 20px;
-        color:white;
-        animation: header 1s ease-in-out;
-    }
-    @keyframes header{
-        0%{
-            opacity: 0;
-            transform: translateY(-100%);
-        }
-    }
+       header{
+           height:50px;
+           width: :100%;
+           background-color: grey;
+       }
        
-       nav li{
-          
-           display: inline-flex;
-           padding-top: 10px;
-           padding-right: 20px;
+       ul li{
+           display:flex;
+           float: right;
            padding-left: 20px;
-      }
-       nav li a{
-           text-decoration: none;
-           color: white;
+           padding-top: 15px;
+           padding-right: 20px;
            font-size: 15px;
            font-weight: 600;
+        
        }
-       nav li:hover{
+       li a{
+           text-decoration: none;
+           color: white;
+       }
+       li i{
+           color: white;
+       } 
+         ul li:hover{
            color: white;
            opacity: 50%;
        }
-     
-           
-       img{
-           height:500px;
-           width:100%;
-           opacity: 50%;
-       }
+      
     </style>
     
     
     <body>
-        <h2></h2>
+      
         <header>
-           
-    <nav>
+            
+<ul>
         
-        <li><a href="#"><i class="fa fa-home"> Home</i> </a></li>
-        <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li> 
-          
-    </nav>  
+        <li><a href="#"><i class="fa  fa-home"></i> Home</a></li>
+    <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+</ul>
        </header>
         
-        <div class="main1">
-        <div class="image">
-            <img src="https://wallpapercave.com/wp/wp3077561.png">
-            </div>
-        
-        </div>
+       
     </body>
 </html>
